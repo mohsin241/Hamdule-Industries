@@ -1,7 +1,7 @@
 import { Tag, Calendar, Award } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import aboutImg from "../../assests/about_us_img.png";
-import aboutimg2 from "../../assests/Screenshot 2025-07-28 191622.png"
+import aboutimg2 from "../../assests/Screenshot 2025-07-28 191622.png";
 import { motion } from "framer-motion";
 
 export default function About() {
@@ -88,44 +88,22 @@ export default function About() {
           </div>
 
           {/* Image & Timeline Section */}
-          <div className="space-y-8">
+          <div className="flex flex-col space-y-6">
             <motion.img
               src={aboutImg}
               alt="Industrial workshop"
-              className="rounded-xl shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out"
+              className="rounded-xl shadow-xl w-full object-cover"
               whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.5 }}
             />
 
-            <motion.div
-              whileHover={{ y: -2 }}
-              transition={{ type: "spring", stiffness: 250 }}
-            >
-              {/* <Card className="bg-white shadow-md rounded-xl border">
-                <CardContent className="p-6 space-y-4">
-                  <h4 className="text-xl font-bold text-navy-900">Our Legacy</h4>
-                  <div className="space-y-4">
-                    {[
-                      { year: "1952", text: "Founded by Junaid Hamdule" },
-                      { year: "1950s", text: "IBR Approval obtained" },
-                      { year: "Today", text: "Leading boiler contractor in India" },
-                    ].map((item, index) => (
-                      <div key={index} className="flex items-center space-x-3">
-                        <div className="w-3 h-3 bg-orange-600 rounded-full animate-pulse"></div>
-                        <div>
-                          <span className="font-semibold text-navy-900">{item.year}:</span>
-                          <span className="text-gray-600 ml-2">{item.text}</span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card> */}
-              <img
-                src = {aboutimg2}
-                alt="Our Legacy"
-                className="rounded-xl shadow-md object-cover w-full h-auto"
-              />
-            </motion.div>
+            <motion.img
+              src={aboutimg2}
+              alt="Our Legacy"
+              className="rounded-xl shadow-md w-full object-cover"
+              whileHover={{ scale: 1.03 }}
+              transition={{ duration: 0.5 }}
+            />
           </div>
         </motion.div>
       </div>
