@@ -15,6 +15,8 @@ import fireproLogo from '../../assests/firepro.jpg';
 import finolexLogo from '../../assests/finolex.png';
 import weikfieldLogo from '../../assests/weikfield.jpg';
 import avhLogo from '../../assests/AVH.png';
+import govindLogo from '../../assests/govind_milk.jpg'
+import TransparentLogo from '../../assests/Tranparent_Energy.jpg'
 
 export default function Clients() {
   const clientLogos = [
@@ -33,7 +35,9 @@ export default function Clients() {
     { name: "Firepro", src: fireproLogo },
     { name: "Finolex", src: finolexLogo },
     { name: "Weikfield", src: weikfieldLogo },
-    { name: "AVH", src: avhLogo }
+    { name: "AVH", src: avhLogo },
+    { name: "Govind", src: govindLogo },
+    { name: "Transparent", src: TransparentLogo}
   ];
 
   const sectors = [
