@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { SiLinkedin, SiX, SiYoutube } from "react-icons/si";
-import logo from "../../assests/hamdule logo.png";
+import logo from "../../assests/footer_logo.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -29,7 +29,7 @@ export default function Footer() {
               <img
                 src={logo}
                 alt="Hamdule Industries Logo"
-                className="h-14 md:h-16 lg:h-20 w-auto object-contain bg-white"
+                className=" h-14 md:h-16 lg:h-20 w-auto object-contain bg-white"
               />
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
