@@ -184,7 +184,7 @@ export default function Contact() {
                         <SelectTrigger className="mt-2">
                           <SelectValue placeholder="Select service" />
                         </SelectTrigger>
-                        <SelectContent>
+                        <SelectContent className="h-36">
                           <SelectItem value="emergency">Boiler Breakdown & Shutdown Jobs</SelectItem>
                           <SelectItem value="consultation">Reconditioning & Installation</SelectItem>
                           <SelectItem value="repair">Repair & Maintenance</SelectItem>
@@ -205,7 +205,7 @@ export default function Contact() {
                         <SelectTrigger className="mt-2">
                           <SelectValue placeholder="Select product" />
                         </SelectTrigger>
-                        <SelectContent>
+                        <SelectContent className="h-36" >
                           <SelectItem value="boiler">Studded Bed Coils</SelectItem>
                           <SelectItem value="burner">Super Heater Coils</SelectItem>
                           <SelectItem value="valve">Waterwall Panels</SelectItem>
